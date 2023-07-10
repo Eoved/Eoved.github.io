@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="css/light.css">
     <link id="theme" rel="stylesheet" href="css/dark.css">
   </head>
-  <body onload="about_click()">
+  <body>
     <!--navigation bar-->
     <div class="page-header">
       <div class="nav">
         <name>Andrew DeVoe</name>
-        <!-- class="active" -->
-        <li id="nav-about" style="cursor: pointer;" onclick="about_click()">about</li>
+        <li class="active" id="nav-about" style="cursor: pointer;" onclick="about_click()">about</li>
         <li id="nav-experience" style="cursor: pointer;" onclick="experience_click()">experience</li>
         <li id="nav-projects" style="cursor: pointer;" onclick="projects_click()">projects</li>
         <li style="cursor: pointer;" onclick="cv_click()">cv</li>
@@ -80,7 +79,7 @@
         </div>
       </div>
     </div>
-    <div id="experience">
+    <div id="experience" style="display: none;">
       <div class="row">
         <div class="col" style="width: 100%;">
           <div class="row" style="margin: 2%;">

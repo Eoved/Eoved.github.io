@@ -5,6 +5,13 @@ if (current_theme == "light") {
     toggle_dark();
 }
 
+function set_cookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
 function get_cookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
@@ -23,6 +30,7 @@ function get_cookie(cname) {
 
 function toggle_theme() {
     var theme = get_cookie("theme");
+    console.log(theme);
     if (theme == "light") {
         toggle_dark();
     } else if (theme == "dark") {
@@ -31,7 +39,7 @@ function toggle_theme() {
 }
 
 function toggle_dark() {
-    document.cookie = "theme=dark;SameSite=Lax";
+    document.cookie = set_cookie("theme","dark", 30);
     document.getElementById("theme").href = "css/dark.css";
 }
 
@@ -40,7 +48,7 @@ function toggle_blue() {
 }
 
 function toggle_light() {
-    document.cookie = "theme=light;SameSite=Lax";
+    document.cookie = set_cookie("theme","light", 30);
     document.getElementById("theme").href = "css/light.css";
 }
 
