@@ -1,0 +1,127 @@
+/* override default body settings */
+body {
+    margin: 0;
+    background-color: #d9d9d9;
+}
+
+h1 {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: bold;
+    color: #353535;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: bold;
+    color: #353535;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #353535;
+    text-align: left;
+    margin-top: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 0;
+}
+
+/* column container */
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* row container */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #353535;
+}
+
+/* navbar name */
+.nav name {
+    float: left;
+    display: flex;
+    height: 100%;
+    padding: 20px 24px;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+/* navbar element */
+.nav a {
+    float: left;
+    display: flex;
+    height: 100%;
+    padding: 24px 24px;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+/* change navbar item when hovering over it */
+.nav a:hover {
+    background-color: #7e7e7e;
+}
+
+/* change navbar item when active */
+.nav a.active {
+    color: #353535;
+    background-color: #d9d9d9;
+}
+
+/* elements on the right */
+.nav-right {
+    float: right;
+}
+
+.nav-right icon {
+    float: left;
+    display: flex;
+    vertical-align: middle;
+    padding: 14px 15px;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.avatar {
+    align-content: center;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    padding: 5% 10%;
+  }
+  
+/* experience and education images */
+.image {
+    align-content: center;
+    vertical-align: middle;
+    max-width: 80%;
+    padding: 5% 10%;
+}
