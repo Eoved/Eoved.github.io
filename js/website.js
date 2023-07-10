@@ -32,7 +32,7 @@ function toggle_theme() {
 
 function toggle_dark() {
     document.cookie = "theme=dark;SameSite=Lax";
-    document.getElementById("theme").href = "dark.css";
+    document.getElementById("theme").href = "css/dark.css";
 }
 
 function toggle_blue() {
@@ -41,7 +41,7 @@ function toggle_blue() {
 
 function toggle_light() {
     document.cookie = "theme=light;SameSite=Lax";
-    document.getElementById("theme").href = "light.css";
+    document.getElementById("theme").href = "css/light.css";
 }
 
 function email_click() {
@@ -56,13 +56,33 @@ function linkedin_click() {
 }
 
 function about_click() {
-    document.getElementsByTagName("body").innerHTML = "about.html";
+    document.getElementById("nav-about").classList.add("active");
+    document.getElementById("nav-experience").classList.remove("active");
+    document.getElementById("nav-projects").classList.remove("active");
+
+    document.getElementById("about").style.display = "block";
+    document.getElementById("experience").style.display = "none";
+    document.getElementById("projects").style.display = "none";
 }
 
 function experience_click() {
+    document.getElementById("nav-about").classList.remove("active");
+    document.getElementById("nav-experience").classList.add("active");
+    document.getElementById("nav-projects").classList.remove("active");
+
+    document.getElementById("about").style.display = "none";
+    document.getElementById("experience").style.display = "block";
+    document.getElementById("projects").style.display = "none";
 }
 
 function projects_click() {
+    document.getElementById("nav-about").classList.remove("active");
+    document.getElementById("nav-experience").classList.remove("active");
+    document.getElementById("nav-projects").classList.add("active");
+
+    document.getElementById("about").style.display = "none";
+    document.getElementById("experience").style.display = "none";
+    document.getElementById("projects").style.display = "block";
 }
 
 function cv_click() {

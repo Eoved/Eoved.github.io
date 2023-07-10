@@ -1,16 +1,14 @@
 /* override default body settings */
 body {
     margin: 0;
-    background-color: #444444;
-    /* background-color: #243b53; */
+    background-color: #d9d9d9;
 }
 
 h1 {
     font-family: Helvetica;
     font-size: 48px;
     font-weight: bold;
-    color: #bfbfbf;
-    /* color: #bcccdc; */
+    color: #353535;
     margin-top: 20px;
     margin-left: 25px;
     margin-right: 0;
@@ -21,8 +19,7 @@ h2 {
     font-family: Helvetica;
     font-size: 24px;
     font-weight: bold;
-    color: #bfbfbf;
-    /* color: #bcccdc; */
+    color: #353535;
     margin-top: 20px;
     margin-left: 25px;
     margin-right: 0;
@@ -32,8 +29,7 @@ h2 {
 p {
     font-family: Helvetica;
     font-size: 18px;
-    color: #bfbfbf;
-    /* color: #bcccdc; */
+    color: #353535;
     text-align: left;
     margin-top: 18px;
     margin-left: 25px;
@@ -56,7 +52,6 @@ p {
 .nav {
     overflow: hidden;
     background-color: #353535;
-    /* background-color: #102a43; */
 }
 
 /* navbar name */
@@ -71,11 +66,10 @@ p {
     font-weight: bold;
     text-decoration: none;
     color: #bfbfbf;
-    /* color: #bcccdc; */
 }
 
 /* navbar element */
-.nav a {
+.nav li {
     float: left;
     display: flex;
     height: 100%;
@@ -85,20 +79,17 @@ p {
     font-size: 20px;
     text-decoration: none;
     color: #bfbfbf;
-    /* color: #bcccdc; */
 }
 
 /* change navbar item when hovering over it */
-.nav a:hover {
+.nav li:hover {
     background-color: #7e7e7e;
-    /* background-color: #486581; */
 }
 
 /* change navbar item when active */
-.nav a.active {
-    color: #bfbfbf;
-    background-color: #444444;
-    /* background-color: #243b53; */
+.nav li.active {
+    color: #353535;
+    background-color: #d9d9d9;
 }
 
 /* elements on the right */
@@ -116,10 +107,8 @@ p {
     font-size: 40px;
     text-decoration: none;
     color: #bfbfbf;
-    /* color: #bcccdc; */
 }
 
-/* headshot */
 .avatar {
     align-content: center;
     vertical-align: middle;
@@ -127,8 +116,8 @@ p {
     max-height: 100%;
     border-radius: 50%;
     padding: 5% 10%;
-}
-
+  }
+  
 /* experience and education images */
 .image {
     align-content: center;

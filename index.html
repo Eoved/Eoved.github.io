@@ -4,20 +4,20 @@
     <title>Andrew DeVoe</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="website.js"></script>
+    <script src="js/website.js"></script>
     <script src="https://kit.fontawesome.com/31279751d4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="light.css">
-    <link id="theme" rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="css/light.css">
+    <link id="theme" rel="stylesheet" href="css/dark.css">
   </head>
   <body>
     <!--navigation bar-->
     <div class="page-header">
       <div class="nav">
         <name>Andrew DeVoe</name>
-        <a class="active" href="index.html">about</a>
-        <a href="experience.html">experience</a>
-        <a href="projects.html">projects</a>
-        <a href="cv.pdf">cv</a>
+        <li id="nav-about" class="active" style="cursor: pointer;" onclick="about_click()">about</li>
+        <li id="nav-experience" style="cursor: pointer;" onclick="experience_click()">experience</li>
+        <li id="nav-projects" style="cursor: pointer;" onclick="projects_click()">projects</li>
+        <li style="cursor: pointer;" onclick="cv_click()">cv</li>
         <div class="nav-right">
           <icon><i href="mailto:adevoe@uchicago.edu" class="fa-solid fa-envelope" onclick="email_click()" style="cursor: pointer;"></i></icon>
           <icon><i class="fa fa-github" onclick="github_click()" style="cursor: pointer;"></i></icon>
@@ -26,11 +26,11 @@
         </div>
       </div>
     </div>
-    <div id="content">
+    <div id="about">
       <!-- image and about -->
       <div class="row" style="height: 25%;">
         <div class="col" style="width: 25%;">
-          <img src="images/avatar.png" alt="Avatar" class="avatar">
+          <img src="img/avatar.png" alt="Avatar" class="avatar">
         </div>
         <div class="col" style="width: 75%;">
           <h1>about</h1>
@@ -60,7 +60,7 @@
           <h1>education</h1>
           <div class="row" style="margin: 2%;">
             <div class="col" style="width: 15%;">
-              <img src="images/uchicago.png" alt="UChicago" class="image" style="width: 100%; height: 100%;">
+              <img src="img/uchicago.png" alt="UChicago" class="image" style="width: 100%; height: 100%;">
             </div>
             <div class="col" style="width: 85%; border-radius: 25px; background-color: maroon;">
               <h2 style="color: #bfbfbf;">University of Chicago (2020-2024)</h2>
@@ -76,6 +76,16 @@
               </p>
           </div>
         </div>
+      </div>
+    </div>
+    <div id="experience" style="display: none;">
+      <div>
+        <h1>EXPERIENCE</h1>
+      </div>
+    </div>
+    <div id="projects" style="display: none;">
+      <div>
+        <h1>PROJECTS</h1>
       </div>
     </div>
   </body>
