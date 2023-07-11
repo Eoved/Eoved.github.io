@@ -1,36 +1,12 @@
-const current_theme = document.cookie;
-if (current_theme == "light") {
-    toggle_light();
-} else {
+const current_theme = localStorage.getItem("theme");
+if (current_theme == "dark") {
     toggle_dark();
+} else {
+    toggle_light();
 }
-
-function set_cookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    let expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function get_cookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
 
 function toggle_theme() {
-    var theme = get_cookie("theme");
-    console.log(theme);
+    var theme = localStorage.getItem("theme");
     if (theme == "light") {
         toggle_dark();
     } else if (theme == "dark") {
@@ -39,16 +15,12 @@ function toggle_theme() {
 }
 
 function toggle_dark() {
-    document.cookie = set_cookie("theme","dark", 30);
+    localStorage.setItem("theme", "dark");
     document.getElementById("theme").href = "css/dark.css";
 }
 
-function toggle_blue() {
-    document.cookie = "theme=blue;SameSite=Lax";
-}
-
 function toggle_light() {
-    document.cookie = set_cookie("theme","light", 30);
+    localStorage.setItem("theme", "light");
     document.getElementById("theme").href = "css/light.css";
 }
 
@@ -63,7 +35,19 @@ function linkedin_click() {
     window.open("https://www.linkedin.com/in/andrew-devoe/");
 }
 
+function get_page() {
+    var page = localStorage.getItem("page");
+    if (page == "experience") {
+        experience_click();
+    } else if (page == "projects") {
+        projects_click();
+    } else {
+        about_click();
+    }
+}
+
 function about_click() {
+    localStorage.setItem("page", "about");
     document.getElementById("nav-about").classList.add("active");
     document.getElementById("nav-experience").classList.remove("active");
     document.getElementById("nav-projects").classList.remove("active");
@@ -74,6 +58,7 @@ function about_click() {
 }
 
 function experience_click() {
+    localStorage.setItem("page", "experience");
     document.getElementById("nav-about").classList.remove("active");
     document.getElementById("nav-experience").classList.add("active");
     document.getElementById("nav-projects").classList.remove("active");
@@ -84,6 +69,7 @@ function experience_click() {
 }
 
 function projects_click() {
+    localStorage.setItem("page", "projects");
     document.getElementById("nav-about").classList.remove("active");
     document.getElementById("nav-experience").classList.remove("active");
     document.getElementById("nav-projects").classList.add("active");

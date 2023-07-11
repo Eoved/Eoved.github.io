@@ -4,19 +4,19 @@
     <title>Andrew DeVoe</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/website.js"></script>
     <script src="https://kit.fontawesome.com/31279751d4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/light.css">
     <link id="theme" rel="stylesheet" href="css/dark.css">
+    <script src="js/website.js"></script>
   </head>
-  <body>
+  <body onload="get_page()">
     <!--navigation bar-->
     <div class="page-header">
       <div class="nav">
         <name>Andrew DeVoe</name>
         <li class="active" id="nav-about" style="cursor: pointer;" onclick="about_click()">about</li>
         <li id="nav-experience" style="cursor: pointer;" onclick="experience_click()">experience</li>
-        <li id="nav-projects" style="cursor: pointer;" onclick="projects_click()">projects</li>
+        <li id="nav-projects" style="cursor: pointer;" onclick="projects_click()">project showcase</li>
         <li style="cursor: pointer;" onclick="cv_click()">cv</li>
         <div class="nav-right">
           <icon><i href="mailto:adevoe@uchicago.edu" class="fa-solid fa-envelope" onclick="email_click()" style="cursor: pointer;"></i></icon>
@@ -79,15 +79,15 @@
         </div>
       </div>
     </div>
-    <div id="experience" style="display: none;">
+    <div id="experience">
       <div class="row">
         <div class="col" style="width: 100%;">
           <div class="row" style="margin: 2%;">
             <div class="col" style="width: 15%;">
-              <img src="img/uchicago.png" alt="UChicago" class="image" style="width: 100%; height: 100%;">
+              <img src="img/ge-vernova.png" alt="GE Vernova" class="image" style="width: 100%; height: 100%;">
             </div>
-            <div class="col" style="width: 85%; border-radius: 25px; background-color: maroon;">
-              <h2 style="color: #bfbfbf;">University of Chicago (2020-2024)</h2>
+            <div class="col" style="width: 85%; border-radius: 25px; background-color: #005e60;">
+              <h2 style="color: #bfbfbf;">GE Vernova</h2>
               <p style="color: #bfbfbf;">
                 Bachelor of Scicence in Computer Science with specialization in computer systems<br>
                 Minors in Astronomy and Astrophysics and History<br>
@@ -102,10 +102,28 @@
           </div>
           <div class="row" style="margin: 2%;">
             <div class="col" style="width: 15%;">
-              <img src="img/uchicago.png" alt="UChicago" class="image" style="width: 100%; height: 100%;">
+              <img src="img/uchicago-cs.png" alt="UChicago CS" class="image" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col" style="width: 85%; border-radius: 25px; background-color: #7f1725;">
+              <h2 style="color: #bfbfbf;">University of Chicago Department of Computer Science</h2>
+              <p style="color: #bfbfbf;">
+                Bachelor of Scicence in Computer Science with specialization in computer systems<br>
+                Minors in Astronomy and Astrophysics and History<br>
+                <br>
+                Relevant Coursework: Operating Systems, Computer Architecture, Theory of Algorithms,
+                Mobile Computing, Intro to Computer Security, Programming Languages, Introduction
+                to Python Programming with Applications to Astro Statistics, the Milky Way, 
+                Exoplanets, Galaxies, and Statistical Methods and Applications<br>
+
+              </p>
+            </div>
+          </div>
+          <div class="row" style="margin: 2%;">
+            <div class="col" style="width: 15%;">
+              <img src="img/uchicago-athletics.png" alt="UChicago Athletics" class="image" style="width: 100%; height: 100%;">
             </div>
             <div class="col" style="width: 85%; border-radius: 25px; background-color: maroon;">
-              <h2 style="color: #bfbfbf;">University of Chicago (2020-2024)</h2>
+              <h2 style="color: #bfbfbf;">University of Chicago Atheltics Department</h2>
               <p style="color: #bfbfbf;">
                 Bachelor of Scicence in Computer Science with specialization in computer systems<br>
                 Minors in Astronomy and Astrophysics and History<br>
@@ -121,7 +139,7 @@
         </div>
       </div>
     </div>
-    <div id="projects" style="display: none;">
+    <div id="projects">
       <div>
         <h1>PROJECTS</h1>
       </div>

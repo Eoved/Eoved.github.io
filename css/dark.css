@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-family: Helvetica;
+    font-family: 'Helvetica';
     font-size: 48px;
     font-weight: bold;
     color: #bfbfbf;
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-family: Helvetica;
+    font-family: 'Helvetica';
     font-size: 24px;
     font-weight: bold;
     color: #bfbfbf;
@@ -30,8 +30,9 @@ h2 {
 }
 
 p {
-    font-family: Helvetica;
+    font-family: 'Helvetica';
     font-size: 18px;
+    line-height: 1.25;
     color: #bfbfbf;
     /* color: #bcccdc; */
     text-align: left;
@@ -66,7 +67,7 @@ p {
     height: 100%;
     padding: 20px 24px;
     text-align: center;
-    font-family: Helvetica;
+    font-family: 'Helvetica';
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -81,7 +82,7 @@ p {
     height: 100%;
     padding: 24px 24px;
     text-align: center;
-    font-family: Helvetica;
+    font-family: 'Helvetica';
     font-size: 20px;
     text-decoration: none;
     color: #bfbfbf;
