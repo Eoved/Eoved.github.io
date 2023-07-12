@@ -1,178 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Andrew DeVoe</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/31279751d4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/light.css">
-    <link id="theme" rel="stylesheet" href="css/dark.css">
-    <script src="js/website.js"></script>
-  </head>
-  <body onload="get_page()">
-    <!--navigation bar-->
-    <div class="page-header">
-      <div class="nav">
-        <name>Andrew DeVoe</name>
-        <li class="active" id="nav-about" style="cursor: pointer;" onclick="about_click()">about</li>
-        <li id="nav-experience" style="cursor: pointer;" onclick="experience_click()">experience</li>
-        <li id="nav-projects" style="cursor: pointer;" onclick="projects_click()">project showcase</li>
-        <li style="cursor: pointer;" onclick="cv_click()">cv</li>
-        <div class="nav-right">
-          <icon><i href="mailto:adevoe@uchicago.edu" class="fa-solid fa-envelope" onclick="email_click()" style="cursor: pointer;"></i></icon>
-          <icon><i class="fa fa-github" onclick="github_click()" style="cursor: pointer;"></i></icon>
-          <icon><i class="fa-brands fa-linkedin" onclick="linkedin_click()" style="cursor: pointer;"></i></icon>
-          <icon><i name="dark" class="fa-solid fa-moon" onclick="toggle_theme()" style="font-size: 20px; padding: 10px; cursor: pointer;"></i></icon>
-        </div>
-      </div>
-    </div>
-    <div id="about">
-      <!-- image and about -->
-      <div class="row" style="height: 25%;">
-        <div class="col" style="width: 25%;">
-          <img src="img/avatar.png" alt="Avatar" class="avatar">
-        </div>
-        <div class="col" style="width: 75%;">
-          <h1>about</h1>
-          <p>
-            I am a fourth-year undergrad student at the University of Chicago expecting to graduate 
-            in spring of 2024. I am pursuing a Bachelor of Science in Computer Science with a 
-            specialization in Computer Systems. I am double minoring in Astronomy and Astrophysics 
-            and History. I am the vice president of the UChicago Men's Club Ice Hockey team and a 
-            member of the UChicago climbing club URock. I am interested in technology, specifically 
-            software engineering and how persistent computing and software can solve everyday problems. 
-            I also like developing random programs and games for my own enjoyment. A long term goal of 
-            mine is to completely build a computer from scratch (both hardware and software).
-            <br><br>
-            Outside of school, I love being active and exploring the world. My most frequent activities 
-            include climbing, hiking, running, hockey, soccer, reading, going to museums, and video 
-            games. I love watching hockey, soccer, and Formula 1. I often find myself distracted while 
-            learning about random facts or following the news (tech, financial, political, science, space) 
-            or consuming as much Monty Python content as possible before discovering that the day is 
-            suddenly over. I also love traveling and have passable German skills (if I was stuck with 
-            only German speakers, I think I would survive) that I am working on improving.
-          </p>
-        </div>
-      </div>
-      <div class="row" style="height: 25%;">
-        <!-- education -->
-        <div class="col" style="width: 100%;">
-          <h1>education</h1>
-          <div class="row" style="margin: 2%;">
-            <div class="col" style="width: 15%;">
-              <img src="img/uchicago.png" alt="UChicago" class="image" style="width: 100%; height: 100%;">
-            </div>
-            <div class="col" style="width: 85%; border-radius: 25px; background-color: maroon;">
-              <h2 style="color: #bfbfbf;">University of Chicago (2020-2024)</h2>
-              <p style="color: #bfbfbf;">
-                Bachelor of Scicence in Computer Science with specialization in computer systems<br>
-                Minors in Astronomy and Astrophysics and History<br>
-                <br>
-                Relevant Coursework: Operating Systems, Computer Architecture, Theory of Algorithms,
-                Mobile Computing, Intro to Computer Security, Programming Languages, Introduction
-                to Python Programming with Applications to Astro Statistics, the Milky Way, 
-                Exoplanets, Galaxies, and Statistical Methods and Applications<br>
 
-              </p>
-            </div>
+<head>
+  <title>Andrew DeVoe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/31279751d4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/light.css">
+  <link id="theme" rel="stylesheet" href="css/dark.css">
+  <script src="js/website.js"></script>
+</head>
+
+<body onload="get_page()">
+  <!--navigation bar-->
+  <div class="page-header">
+    <div class="nav">
+      <name>Andrew DeVoe</name>
+      <li class="active" id="nav-about" style="cursor: pointer;" onclick="about_click()">about</li>
+      <li id="nav-experience" style="cursor: pointer;" onclick="experience_click()">experience</li>
+      <li id="nav-projects" style="cursor: pointer;" onclick="projects_click()">project showcase</li>
+      <li style="cursor: pointer;" onclick="cv_click()">cv</li>
+      <div class="nav-right">
+        <icon><i href="mailto:adevoe@uchicago.edu" class="fa-solid fa-envelope" onclick="email_click()"
+            style="cursor: pointer;"></i></icon>
+        <icon><i class="fa fa-github" onclick="github_click()" style="cursor: pointer;"></i></icon>
+        <icon><i class="fa-brands fa-linkedin" onclick="linkedin_click()" style="cursor: pointer;"></i></icon>
+        <icon><i name="dark" class="fa-solid fa-moon" onclick="toggle_theme()"
+            style="font-size: 20px; padding: 10px; cursor: pointer;"></i></icon>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <!-- image and about -->
+    <div class="row" style="height: 25%;">
+      <div class="col" style="width: 25%;">
+        <img src="img/avatar.png" alt="Avatar" class="avatar">
+      </div>
+      <div class="col" style="width: 75%;">
+        <h1>about</h1>
+        <p>
+          I am a fourth-year undergrad student at the University of Chicago expecting to graduate
+          in spring of 2024. I am pursuing a Bachelor of Science in Computer Science with a
+          specialization in Computer Systems. I am double minoring in Astronomy and Astrophysics
+          and History. I am the vice president of the UChicago Men's Club Ice Hockey team and a
+          member of the UChicago climbing club, URock. I am interested in technology, specifically
+          software engineering and how persistent computing and software can solve everyday problems.
+          I also like developing random programs and games for my own enjoyment. A long term goal of
+          mine is to completely build a computer from scratch (both hardware and software).
+          <br><br>
+          Outside of school, I love being active and exploring the world. My most frequent activities
+          include climbing, hiking, running, hockey, soccer, reading, going to museums, and video
+          games. I love watching hockey, soccer, and Formula 1. I often find myself distracted while
+          learning about random facts or following the news (tech, financial, political, science, space)
+          or consuming as much Monty Python content as possible before discovering that the day is
+          suddenly over. I also love traveling and have passable German skills (if I was stuck with
+          only German speakers, I think I would survive) that I am working on improving.
+        </p>
+      </div>
+    </div>
+    <div class="row" style="height: 25%;">
+      <!-- education -->
+      <div class="col" style="width: 100%;">
+        <h1>education</h1>
+        <div class="row" style="margin: 2%; display: flex; align-items: center;">
+          <div class="col" style="width: 15%;">
+            <img src="img/uchicago.png" alt="UChicago" class="image" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col" style="width: 85%; height: 250px; border-radius: 25px; background-color: maroon;">
+            <h2 style="color: #bfbfbf;">University of Chicago (2020-2024)</h2>
+            <h3 style="color: #bfbfbf;">
+              Bachelor of Scicence in Computer Science with specialization in computer systems<br>
+              Minors in Astronomy and Astrophysics and History
+            </h3>
+            <p style="color: #bfbfbf;">
+              Relevant Coursework: Operating Systems, Computer Architecture, Theory of Algorithms,
+              Mobile Computing, Intro to Computer Security, Programming Languages, Introduction
+              to Python Programming with Applications to Astro Statistics, the Milky Way,
+              Exoplanets, Galaxies, Statistical Methods and Applications, Mechanics, and
+              Electricity and Magnetism
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div id="experience">
-      <div class="row">
-        <div class="col" style="width: 100%;">
-          <div class="row" style="margin: 2%;">
-            <div class="col" style="width: 15%;">
-              <img src="img/ge-vernova.png" alt="GE Vernova" class="image" style="width: 100%; height: auto;">
-            </div>
-            <div class="col" style="width: 85%; height: 300px; border-radius: 25px; background-color: #005e60;">
-              <h2 style="color: #bfbfbf;">GE Vernova (June 2023 - Present)</h2>
-              <h3 style="color: #bfbfbf;">Digital Technology Intern</h3>
-              <p style="color: #bfbfbf;">
-                TEXT HERE<br>
-              </p>
-            </div>
+    <div class="row" style="margin: 2%; display: flex; align-items: center;">
+      <div class="col" style="width: 15%;">
+        <img src="img/ua-schools.png" alt="UA Schools" class="image" style="width: 100%; height: 100%;">
+      </div>
+      <div class="col" style="width: 85%; height: 150px; border-radius: 25px; background-color: #d4d246;">
+        <h2 style="color: #353535;">Upper Arlington High School (2016 - 2020)</h2>
+        <h3 style="color: #353535;">International Baccalaureate Diploma and Diploma with Honors</h3>
+        <p style="color: #353535;">
+          Relevant Coursework: IB Computer Science HL, AP Computer Science A, IB German SL,
+          AP Physics C: Mechanics, IB History HL, AP European History, and IB World Religions
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="experience">
+    <div class="row">
+      <div class="col" style="width: 100%;">
+        <div class="row" style="margin: 2%; display: flex; align-items: center;">
+          <div class="col" style="width: 15%;">
+            <img src="img/ge-vernova.png" alt="GE Vernova" class="image" style="width: 100%; height: auto;">
           </div>
-          <div class="row" style="margin: 2%;">
-            <div class="col" style="width: 15%;">
-              <img src="img/uchicago-athletics.png" alt="UChicago Athletics" class="image" style="width: 100%; height: 100%;">
-            </div>
-            <div class="col" style="width: 85%; border-radius: 25px; background-color: maroon;">
-              <h2 style="color: #bfbfbf;">University of Chicago Atheltics Department (October 2021 - Present)</h2>
-              <h3 style="color: #bfbfbf;">Athletics Event Staff</h3>
-              <p style="color: #bfbfbf;">
-                TEXT HERE<br>
-              </p>
-            </div>
+          <div class="col" style="width: 85%; height: 300px; border-radius: 25px; background-color: #005e60;">
+            <h2 style="color: #bfbfbf;">GE Vernova (June 2023 - Present)</h2>
+            <h3 style="color: #bfbfbf;">Digital Technology Intern</h3>
+            <p style="color: #bfbfbf;">
+              TEXT HERE<br>
+            </p>
           </div>
-          <div class="row" style="margin: 2%;">
-            <div class="col" style="width: 15%;">
-              <img src="img/uchicago-cs.png" alt="UChicago CS" class="image" style="width: 100%; height: 100%;">
-            </div>
-            <div class="col" style="width: 85%; border-radius: 25px; background-color: #7f1725;">
-              <h2 style="color: #bfbfbf;">University of Chicago Department of Computer Science (March 2023 - June 2023)</h2>
-              <h3 style="color: #bfbfbf;">Course TA</h3>
-              <p style="color: #bfbfbf;">
-                TEXT HERE<br>
-              </p>
-            </div>
+        </div>
+        <div class="row" style="margin: 2%; display: flex; align-items: center;">
+          <div class="col" style="width: 15%;">
+            <img src="img/uchicago-athletics.png" alt="UChicago Athletics" class="image"
+              style="width: 100%; height: 100%;">
           </div>
-          <div class="row" style="margin: 2%;">
-            <div class="col" style="width: 15%;">
-              <img src="img/nationwide.png" alt="Nationwide" class="image" style="width: 100%; height: 100%;">
-            </div>
-            <div class="col" style="width: 85%; border-radius: 25px; background-color: #2c4c96;">
-              <h2 style="color: #bfbfbf;">Nationwide Insurance (June 2022 — August 2022)</h2>
-              <h3 style="color: #bfbfbf;">Digital Technology Intern</h3>
-              <p style="color: #bfbfbf;">
-                TEXT HERE<br>
-              </p>
-            </div>
+          <div class="col" style="width: 85%; border-radius: 25px; background-color: maroon;">
+            <h2 style="color: #bfbfbf;">University of Chicago Atheltics Department (October 2021 - Present)</h2>
+            <h3 style="color: #bfbfbf;">Athletics Event Staff</h3>
+            <p style="color: #bfbfbf;">
+              TEXT HERE<br>
+            </p>
           </div>
-          <div class="row" style="margin: 2%;">
-            <div class="col" style="width: 15%;">
-              <img src="img/uchicago-cs.png" alt="UChicago CS" class="image" style="width: 100%; height: 100%;">
-            </div>
-            <div class="col" style="width: 85%; border-radius: 25px; background-color: #7f1725;">
-              <h2 style="color: #bfbfbf;">University of Chicago Department of Computer Science (March 2022 - June 2022)</h2>
-              <h3 style="color: #bfbfbf;">Course Grader</h3>
-              <p style="color: #bfbfbf;">
-                TEXT HERE<br>
-              </p>
-            </div>
+        </div>
+        <div class="row" style="margin: 2%; display: flex; align-items: center;">
+          <div class="col" style="width: 15%;">
+            <img src="img/uchicago-cs.png" alt="UChicago CS" class="image" style="width: 100%; height: 100%;">
           </div>
-          <div class="row" style="margin: 2%;">
-            <div class="col" style="width: 15%;">
-              <img src="img/columbus-scuba.png" alt="Columbus Scuba" class="image" style="width: 100%; height: 100%;">
-            </div>
-            <div class="col" style="width: 85%; border-radius: 25px; background-color: #a22015;">
-              <h2 style="color: #bfbfbf;">Columbus Scuba (June 2020 — September 2020)</h2>
-              <h3 style="color: #bfbfbf;">Intern</h3>
-              <p style="color: #bfbfbf;">
-                TEXT HERE<br>
-              </p>
-            </div>
+          <div class="col" style="width: 85%; border-radius: 25px; background-color: #7f1725;">
+            <h2 style="color: #bfbfbf;">University of Chicago Department of Computer Science (March 2023 - June 2023)
+            </h2>
+            <h3 style="color: #bfbfbf;">Course TA</h3>
+            <p style="color: #bfbfbf;">
+              TEXT HERE<br>
+            </p>
           </div>
-          <div class="row" style="margin: 2%;">
-            <div class="col" style="width: 15%;">
-              <img src="img/ua-schools.png" alt="UA Schools" class="image" style="width: 100%; height: 100%;">
-            </div>
-            <div class="col" style="width: 85%; border-radius: 25px; background-color: #d4d246;">
-              <h2 style="color: #353535;">Upper Arlington High School Tech Help Desk (August 2019 - May 2020)</h2>
-              <h3 style="color: #353535;">Volunteer</h3>
-              <p style="color: #353535;">
-                TEXT HERE<br>
-              </p>
-            </div>
+        </div>
+        <div class="row" style="margin: 2%; display: flex; align-items: center;">
+          <div class="col" style="width: 15%;">
+            <img src="img/nationwide.png" alt="Nationwide" class="image" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col" style="width: 85%; border-radius: 25px; background-color: #2c4c96;">
+            <h2 style="color: #bfbfbf;">Nationwide Insurance (June 2022 — August 2022)</h2>
+            <h3 style="color: #bfbfbf;">Digital Technology Intern</h3>
+            <p style="color: #bfbfbf;">
+              TEXT HERE<br>
+            </p>
+          </div>
+        </div>
+        <div class="row" style="margin: 2%; display: flex; align-items: center;">
+          <div class="col" style="width: 15%;">
+            <img src="img/uchicago-cs.png" alt="UChicago CS" class="image" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col" style="width: 85%; border-radius: 25px; background-color: #7f1725;">
+            <h2 style="color: #bfbfbf;">University of Chicago Department of Computer Science (March 2022 - June 2022)
+            </h2>
+            <h3 style="color: #bfbfbf;">Course Grader</h3>
+            <p style="color: #bfbfbf;">
+              TEXT HERE<br>
+            </p>
+          </div>
+        </div>
+        <div class="row" style="margin: 2%; display: flex; align-items: center;">
+          <div class="col" style="width: 15%;">
+            <img src="img/columbus-scuba.png" alt="Columbus Scuba" class="image" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col" style="width: 85%; border-radius: 25px; background-color: #a22015;">
+            <h2 style="color: #bfbfbf;">Columbus Scuba (June 2020 — September 2020)</h2>
+            <h3 style="color: #bfbfbf;">Intern</h3>
+            <p style="color: #bfbfbf;">
+              TEXT HERE<br>
+            </p>
+          </div>
+        </div>
+        <div class="row" style="margin: 2%; display: flex; align-items: center;">
+          <div class="col" style="width: 15%;">
+            <img src="img/ua-schools.png" alt="UA Schools" class="image" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col" style="width: 85%; border-radius: 25px; background-color: #d4d246;">
+            <h2 style="color: #353535;">Upper Arlington High School Tech Help Desk (August 2019 - May 2020)</h2>
+            <h3 style="color: #353535;">Volunteer</h3>
+            <p style="color: #353535;">
+              TEXT HERE<br>
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div id="projects">
-      <div>
-        <h1>PROJECTS</h1>
-      </div>
+  </div>
+  <div id="projects">
+    <div>
+      <h1>PROJECTS</h1>
     </div>
-  </body>
+    <div>
+      <img src="img/spiderman-pointing.png" alt="Spiderman Pointing" class="image" style="width: 100%; height: auto;">
+    </div>
+  </div>
+</body>
+
 </html>
