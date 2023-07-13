@@ -27,11 +27,27 @@ h2 {
     margin-left: 25px;
     margin-right: 0;
     margin-bottom: 0;
+    float: left;
+    display: inline;
 }
 
 h3 {
     font-family: 'Helvetica';
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #bfbfbf;
+    /* color: #bcccdc; */
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 25px;
+    margin-bottom: 0;
+    float: right;
+    display: inline;
+}
+
+h4 {
+    font-family: 'Helvetica';
+    font-size: 20px;
     font-weight: normal;
     font-style: italic;
     color: #bfbfbf;
@@ -40,6 +56,8 @@ h3 {
     margin-left: 25px;
     margin-right: 0;
     margin-bottom: 0;
+    float: left;
+    display: inline;
 }
 
 p {
@@ -50,6 +68,27 @@ p {
     /* color: #bcccdc; */
     text-align: left;
     margin-top: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: square;
+    margin-top: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 18px;
+}
+
+li {
+    font-family: 'Helvetica';
+    font-size: 18px;
+    line-height: 1.25;
+    color: #bfbfbf;
+    /* color: #bcccdc; */
+    text-align: left;
+    margin-top: 0;
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 0;
