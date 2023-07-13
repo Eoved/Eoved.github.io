@@ -84,7 +84,7 @@ ul {
 li {
     font-family: 'Helvetica';
     font-size: 18px;
-    line-height: 1.25;
+    line-height: 1;
     color: #bfbfbf;
     /* color: #bcccdc; */
     text-align: left;
@@ -133,6 +133,7 @@ li {
     display: flex;
     height: 100%;
     padding: 24px 24px;
+    margin: 0 0;
     text-align: center;
     font-family: 'Helvetica';
     font-size: 20px;
